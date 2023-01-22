@@ -146,7 +146,7 @@ async def pm_next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⏪ BACK", callback_data=f"pmnext_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 Pages {math.ceil(int(offset) / 6) + 1} / {math.ceil(total / 6)}", callback_data="pages")]                                  
+             InlineKeyboardButton(f"📄 𝗣𝗮𝗴𝗲 {math.ceil(int(offset) / 6) + 1} / {math.ceil(total / 6)}", callback_data="pages")]                                  
         )
     elif off_set is None:
         btn.append(
@@ -225,7 +225,7 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 Pages {math.ceil(int(offset) / 6) + 1} / {math.ceil(total / 6)}",
+             InlineKeyboardButton(f"📄 𝗣𝗮𝗴𝗲 {math.ceil(int(offset) / 6) + 1} / {math.ceil(total / 6)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
